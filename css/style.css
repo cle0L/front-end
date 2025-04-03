@@ -177,6 +177,9 @@ a:hover{
         display:flex;
         flex-direction: column;
     }
+    .navbar{
+        padding-right: 50px;
+    }
 }
 
 @media (max-width:576px){
@@ -195,5 +198,8 @@ a:hover{
     .grid{
         display:flex;
         flex-direction: column;
+    }
+    .navbar{
+        padding-right: 30px;
     }
 }

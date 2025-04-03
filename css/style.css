@@ -203,3 +203,25 @@ a:hover{
         padding-right: 30px;
     }
 }
+
+@media (max-width:337px){
+    .container{
+        max-width: 300px;
+    }
+    .video{
+        max-width: 250px;
+    }
+    .preparation{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 150px;
+    }
+    .grid{
+        display:flex;
+        flex-direction: column;
+    }
+    .navbar{
+        padding-right: 30px;
+    }
+}

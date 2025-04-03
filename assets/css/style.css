@@ -1,0 +1,199 @@
+@import url(component/navbar.css);
+@import url(component/buttn.css);
+
+body {
+    font-family: "Roboto", serif;
+    text-align: center;
+    background-color: #ebfed6;
+    margin: 0px;
+}
+
+/* TYPO */
+h1 {
+    color: #886176;
+    text-transform: uppercase;
+    font-size: 64px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+
+ol{
+    text-align: left;
+}
+
+p{
+    font-size: 16px;
+}
+
+/* COMPOSANT */
+
+a{
+    color: #886176;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #53fd80;
+    border-bottom:1px solid #53fd80;
+}
+
+/* CLASSE */
+.juan{
+    width: 100%;
+    height: 450px;
+    object-fit: fill;
+    margin-bottom: 0;
+    display: block;
+    top: 10px;
+}
+
+.meta{
+    font-style: italic;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.fancy{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sparkle,.nails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_white{
+    background-color: rgb(208, 197, 232);
+    padding: 5%;
+    margin: 5%;
+}
+#p-white{
+    color: white;
+}
+
+.badge{
+    background-color: #f8590a;
+    margin: 2%;
+    padding: 1%;
+    color: white;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.inline{
+    display: flex;
+    justify-content: space-between;
+}
+.inline li{
+    display:inline;
+    list-style-type: none;
+}
+
+.slay{
+    max-width: 100%;
+}
+
+.ingredient {
+    text-align: left;
+}
+/* ID */
+#header{
+    background-color: #1C232F;
+    padding: 4%;
+    margin-bottom: 4%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    /* z-index: 2;
+    position: absolute; */
+    /* margin: -5px; */
+}
+
+.card{
+    border-top: 5px solid #886176;
+    width: 500px;
+    background-color:#ebfed6;
+    padding: 2%;
+    margin: 5%;
+}
+
+.preparation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.card_border{
+    border:#1C232F 1px solid;
+    border-radius: 10px;
+    background-color: #ebfed6;
+    padding: 16px;
+}
+
+@media (max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width:992px){
+    .container{
+        max-width: 792px;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+        max-width: 568px;
+    }
+    .video{
+        max-width: 455px;
+    }
+    .preparation{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 300px;
+    }
+    .grid{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:576px){
+    .container{
+        max-width: 400px;
+    }
+    .video{
+        max-width: 300px;
+    }
+    .preparation{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 250px;
+    }
+    .grid{
+        display:flex;
+        flex-direction: column;
+    }
+}
